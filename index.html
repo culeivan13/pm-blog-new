@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PM Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- Primary Header -->
+    <header>
+        <h1>MSC Project Management Blog</h1>
+    </header>
+    <!-- Main content -->
+    <main>
+        <h2>The Role of Leadership in Project Management Success</h2>
+        <!-- Blog content fetched from script.js -->
+        <article id="content">
+        </article>
+
+        <!-- Buttons for navigating to other pages -->
+        <div id="pagination">
+            <button id="previous" class="pagination-button" onclick="previousPage()">Previous</button>
+            <div id="current">1</div>
+            <button id="next" class="pagination-button" onclick="nextPage()">Next</button>
+        </div>
+        <div class="comment-section">
+            <h4>Comments</h4>
+            <div class="comment-form">
+                <input type="text" id="name" placeholder="Your name"/>
+                <textarea id="comment" placeholder="Leave a comment"></textarea>
+                <button onclick="addComment()">Add Comment</button>
+            </div>
+            <div id="comments">
+                <h4>Previous Comments</h4>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="share">
+            <h4>Share this article:</h4>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><box-icon type='logo' name='instagram'></box-icon></a>
+                <a href="#" class="social-icon"><box-icon name='twitter' type='logo'></box-icon></a>
+                <a href="#" class="social-icon"><box-icon name='facebook' type='logo'></box-icon></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- <script src="script.js"></script> -->
+
+</html>
